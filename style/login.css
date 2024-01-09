@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-content{
+    width: 100%;
+    height: 40px;
+    background-color:black ;
+}
+
+.head-content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.navbar{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 16px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu{
+    max-width: 570px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    padding-right: 48px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.search{
+    width: 240px;
+    height: 38px;
+    border-radius: 4px;
+    background: var(--Secondary, #F5F5F5);
+    border: none;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa-magnifying-glass{
+    position: relative;
+    right: 35px;
+}
+
+.iconca{
+    max-width: 110px;
+    display: flex;
+    column-gap: 20px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.fa-user{
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.fa-user:active, .fa-user:hover{
+    background-color: #DB4444;
+    color: white;
+}
+
+.hr-nav{
+    width: 100%;
+    opacity: 0.3;
+    background: #000;
+}
+
+.account{
+    max-width: 1200px;
+    display: flex;
+    column-gap: 130px;
+    align-items: center;
+    margin: 60px auto 0;
+}
+
+.create h4{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+}
+
+.p-text{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 24px 0 30px;
+}
+
+
+.for-acc input{
+    width: 370px;
+    height: 32px;
+    border: none;
+    opacity: 0.5;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+.sign-up-btn{
+    width: 143px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--Button2, #DB4444);
+    border: none;
+    color: #F5F5F5;
+    margin: 40px 0 16px;
+}
+
+.sign-up-btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.create a{
+    color: var(--Secondary-2, #DB4444);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.beat{
+    width: 800px;
+    height: 600px;
+}
+
+.img{
+    position: absolute;
+    z-index: 1;
+    padding: 15px 0 0 40px;
+}
+
+.already-account{
+    max-width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0;
+}
+
+
+footer{
+    width: 100%;
+    height: 440px;
+    background-color: #000;
+}
+
+.footer{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.footer-item{
+    color: #F5F5F5;
+}
+
+.logo-footer{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.footer-p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-p2{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 24px 0;
+    width: 200px;
+}
+
+.form{
+    position: absolute;
+}
+
+.form input{
+    width: 217px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1.5px solid #fafafa;
+    font-size: 16px;
+    background: none;
+    padding-left: 18px;
+    color: #F5F5F5;
+}
+
+.form img{
+    position: absolute;
+    z-index: 1;
+    left: 170px;
+    top:12px;
+}
+
+.footer-ul{
+    display: block;
+    list-style: none;
+}
+
+.footer-ul a{
+    color: #F5F5F5;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding-top: 24px;
+}
+
+.footer-item i{
+    font-size: 24px;
+    margin: 24px 24px 0 0;
+}
+
+footer hr{
+    width: 100%;
+    opacity: 0.5;
+    color: #F5F5F5;
+    margin-top: 60px;
+}
+
+.company{
+    color:#F5F5F5 ;
+    opacity: 0.5;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+}

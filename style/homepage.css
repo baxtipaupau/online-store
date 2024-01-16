@@ -70,6 +70,7 @@ body{
 .fa-magnifying-glass{
     position: relative;
     right: 35px;
+    top: 2px;
 }
 
 .iconca{
@@ -80,14 +81,63 @@ body{
     align-items: center;
 }
 
-.fa-user{
+/* user */
+
+.profile-dropdown{
+    position: relative;
+    width: fit-content;
+}
+
+.profile-dropdown-btn i{
     border-radius: 50%;
     padding: 8px;
 }
 
-.fa-user:active, .fa-user:hover{
+.profile-dropdown-btn i:hover{
     background-color: #DB4444;
     color: white;
+}
+
+.profile-dropdown-list{
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    width: 230px;
+    right: 0;
+    border-radius: 4px;
+    background-color: #000;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.profile-dropdown-list.active{
+    max-height: 500px;
+}
+
+.profile-dropdown-list-item{
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.profile-dropdown-list-item:hover{
+    padding-left: 30px;
+    background-color: #DB4444;
+}
+
+.profile-dropdown-list-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
+}
+
+.profile-dropdown-list-item a i{
+    margin-right: 16px;
+    font-size: 24px;
 }
 
 .slider-main{
@@ -261,11 +311,6 @@ body{
     margin: 12px 0;
 }
 
-.heart:hover{
-    background-color: #DB4444;
-    color: white;
-}
-
 .shopping{
     color: black;
     height: 30px;
@@ -275,11 +320,6 @@ body{
     text-align: center;
     padding-top: 5px;
     margin: 0 0 12px;
-}
-
-.shopping:hover{
-    background-color: #DB4444;
-    color: white;
 }
 
 .eye{
@@ -292,7 +332,7 @@ body{
     padding-top: 3px;
 }
 
-.eye:hover{
+.eye:hover, .shopping:hover, .heart:hover{
     background-color: #DB4444;
     color: white;
 }
@@ -310,16 +350,16 @@ body{
     object-fit: cover;
 }
 
-.slider-wrapper .img-list ::-webkit-scrollbar{
+.slider-wrapper .img-list::-webkit-scrollbar{
     display: none;
 }
 
-.slide-button{
+.slide-button, .slide-button2, .slide-button3{
     width: 50px;
     height: 50px;
     background: #F5F5F5;
     color: #383838;
-    border-radius: 50%;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
     font-size: 30px;
@@ -353,10 +393,124 @@ body{
     padding-left: 10px;
 }
 
-.star{
+.star-up{
+    max-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 8px;
+}
+
+.star-up-p{
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.star{
     color: #ffad33;   
 }
+
+.product-btn{
+    width: 234px;
+    height: 56px;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: #DB4444;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+}
+
+.product-btn:hover, .best-sale:hover{
+    transition: 0.2s;
+    background-color: white;
+    color: #DB4444;
+    border: 3px solid #DB4444;
+    font-weight: bold;
+}
+
+.hr{
+    width: 1200px;
+    opacity: 0.3;
+    background: #000;
+    height: 0;
+    margin: 60px 0 90px;
+}
+
+.category-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.category-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 60px;
+}
+.category-about{
+    width: 170px;
+    height: 145px;
+    border-radius: 4px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 0 auto;
+    padding-top: 30px;
+}
+
+.category-about:hover{
+    background-color: #DB4444;
+    transition: 0.2s;
+}
+
+.category-about img{
+    color: #000;
+}
+
+.category-about p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.category-item .category-list{
+    display: grid;
+    gap: 36px;
+    overflow-x: auto;
+    grid-template-columns: repeat(12, 1fr);
+    height: 145px;
+    object-fit: cover;
+}
+
+.category-item .category-list::-webkit-scrollbar{
+    display: none;
+}
+
+.this-month{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.best-sale{
+    width: 159px;
+    height: 56px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #DB4444;
+    font-weight: 500;
+    border: none;
+    color: white;
+}
+
+.best-sale-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 footer{
     width: 100%;
     height: 440px;
@@ -444,5 +598,4 @@ footer hr{
     opacity: 0.5;
     font-size: 16px;
     text-align: center;
-    margin-top: 25px;
 }

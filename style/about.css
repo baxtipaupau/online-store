@@ -70,6 +70,7 @@ body{
 .fa-magnifying-glass{
     position: relative;
     right: 35px;
+    top: 2px;
 }
 
 .iconca{
@@ -80,14 +81,62 @@ body{
     align-items: center;
 }
 
-.fa-user{
+/* user */
+.profile-dropdown{
+    position: relative;
+    width: fit-content;
+}
+
+.profile-dropdown-btn i{
     border-radius: 50%;
     padding: 8px;
 }
 
-.fa-user:active, .fa-user:hover{
+.profile-dropdown-btn i:hover{
     background-color: #DB4444;
     color: white;
+}
+
+.profile-dropdown-list{
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    width: 230px;
+    right: 0;
+    border-radius: 4px;
+    background-color: #000;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.profile-dropdown-list.active{
+    max-height: 500px;
+}
+
+.profile-dropdown-list-item{
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.profile-dropdown-list-item:hover{
+    padding-left: 30px;
+    background-color: #DB4444;
+}
+
+.profile-dropdown-list-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
+}
+
+.profile-dropdown-list-item a i{
+    margin-right: 16px;
+    font-size: 24px;
 }
 
 main{
@@ -179,6 +228,7 @@ main{
     margin-top: 16px;
     font-size: 18px;
 }
+
 
 .about-end{
     display: flex;

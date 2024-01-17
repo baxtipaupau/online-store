@@ -230,17 +230,19 @@ body{
     font-size: 16px;
     font-weight: 600;
     color: #DB4444;
+    text-transform: capitalize;
 }
 
 .sale-time{
     margin: 27px 0 40px;
     display: flex;
-    column-gap: 87px;
+    column-gap: 80px;
 }
 
 .title-p{
     font-size: 36px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .time{
@@ -271,6 +273,12 @@ body{
     width: 282px;
     height: 240px;
     background-color: #F5F5F5;
+}
+
+.product-img img{
+    width: 172px;
+    height: 130px;
+    margin: 49px;
 }
 
 .product{
@@ -422,6 +430,7 @@ body{
     margin: 0 auto;
     display: block;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .product-btn:hover, .best-sale:hover{
@@ -509,6 +518,205 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.content-music{
+    width: 1200px;
+    height: 500px;
+    background-color: #000;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 69px;
+}
+
+.music-p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #00ff66;
+}
+
+.music h3{
+    font-size: 44px;
+    font-weight: 600;
+    color: white;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+
+.music-time{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-hour, .time-day, .time-minut, .time-second{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.time-number{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.time-text{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.buy-now{
+    margin-top: 40px;
+    width: 171px;
+    height: 56px;
+    border-radius: 4px;
+    background-color: #00ff66;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+}
+
+.buy-now:hover{
+    background-color: white;
+    color: #00ff66;
+    transition: 0.2s;
+    border: 3px solid #00ff66;
+}
+
+.our-product{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider-our-product .product-list{
+    display: grid;
+    gap: 25px;
+    overflow-x: auto;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    object-fit: cover;
+}
+
+.slider-our-product .product-list::-webkit-scrollbar{
+    display: none;
+}
+
+.star-up2{
+    max-width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured{
+    max-width: 1200px;
+    margin: 140px auto;
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-arrival1{
+    width: 580px;
+    height: 600px;
+    background-color: #000;
+    padding: 89px 30px 32px;
+}
+
+.new-arrival-img{
+    position: absolute;
+    z-index: 1;
+}
+
+.new-arrival-text{
+    position: absolute;
+    z-index: 1;
+    color: #F5F5F5;
+    margin-top: 350px;
+}
+
+.new-arrival-category{
+    font-size: 24px;
+    font-weight: 600;
+    width: 200px;
+}
+
+.new-arrival-p{
+    font-size: 14px;
+    font-weight: 400;
+    width: 240px;
+    margin: 12px 0;
+}
+
+.new-arrival-a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #F5F5F5;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.new-arrival2-1{
+    width: 590px;
+    height: 284px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.new-arrival-text2{
+    color: #F5F5F5;
+}
+
+.new-arrival2-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0;
+}
+
+.new-arrival2-3{
+    width: 280px;
+    height: 284px;
+    background-color: #000;
+    position: relative;
+    padding: 30px 40px;
+}
+
+.new-arrival-img2{
+    position: absolute;
+    z-index: 1;
+    width: 190px;
+    height: 221px;
+}
+
+.new-arrival-text3{
+    position: absolute;
+    z-index: 1;
+    margin-top: 110px;
+    color: #F5F5F5;
+}
+
+.about-end{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 190px;
+}
+
+.end h3{
+    margin-top: 20px;
 }
 
 footer{

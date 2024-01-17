@@ -29,3 +29,18 @@ const initSlider2 =()=>{
 }
 
 window.addEventListener("load", initSlider2);
+
+const initSlider3 =()=>{
+    const imageList = document.querySelector(".slider-our-product .product-list");
+    const slideButtons = document.querySelectorAll(".scroll3 .slide-button3");
+
+    slideButtons.forEach(button =>{
+        button.addEventListener("click", ()=>{
+            // console.log(button);
+            const direction = button.id === "prev-slide3" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({left: scrollAmount, behavior: "smooth"});
+        });
+    });
+}
+window.addEventListener("load", initSlider3);
